@@ -15,7 +15,7 @@ int main()
 {
 	int userId;
 	std::string username;
-	std::string password;
+	std::string passwd;
 
 	while (true) 
 	{
@@ -34,12 +34,10 @@ int main()
 	std::getline(std::cin, username);
 
 	std::cout << "Please choose your password: ";
-	std::getline(std::cin, password);
+	std::getline(std::cin, passwd);
 
-	UserAccount accountInfo(userId, username, password);
+	UserAccount accountInfo(userId, username, passwd);
 
-
-	std::cout << "\nThank you! \nPlease login: ";
 	bool loginSucceded = false;
 	std::string enteredUserName, enteredPassword;
 
