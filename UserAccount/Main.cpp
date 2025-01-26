@@ -53,7 +53,10 @@ int main()
 
 		if (accountInfo.Login(enteredUserName, enteredPassword)) 
 		{
-			std::cout << "Login Succesful! " + accountInfo.getID();
+			int a = accountInfo.getID();
+			std::string id = std::to_string(a);
+			loginSucceded = true;
+			std::cout << " Login Succesful! User ID: " + id;
 		}
 		else 
 		{
@@ -61,7 +64,7 @@ int main()
 		}
 	} while (!loginSucceded);
 
-
+	
 
 }
 	

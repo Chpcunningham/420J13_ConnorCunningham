@@ -2,11 +2,11 @@
 #include <iostream>
 #include <string>
 
-UserAccount::UserAccount(int Id, const std::string& name, const std::string& pwd) 
+UserAccount::UserAccount(int id, const std::string& userName, const std::string& password) 
 {
-	ID == Id;
-	userName = name;
-	password = pwd;
+	ID = id;
+	UserAccount::userName = userName;
+	UserAccount::password = password;
 }
 
 bool UserAccount::Login(const std::string& enteredUserName, const std::string& enteredPassword) 
