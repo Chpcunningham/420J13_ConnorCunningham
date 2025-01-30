@@ -1,0 +1,89 @@
+//Question 1
+int a = 10;
+int* p = &a;
+*p = 20;
+std::cout << a;
+
+What will be the output? -- 20 (p is pointing to a, modified by *p changing value to 20)
+Will this run/compile? -- It will run/compile
+Is there a memory leak or dangling pointer? -- No there are none.(no new keyword)
+
+//Question 2
+int* p = nullptr;
+*p = 5;
+
+What will be the output? -- 5
+Will this run/compile? -- Yes
+Is there a memory leak or dangling pointer? -- No
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
+
+What will be the output? --
+Will this run/compile? --
+Is there a memory leak or dangling pointer? --
