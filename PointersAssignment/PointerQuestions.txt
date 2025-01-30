@@ -1,4 +1,4 @@
-//Question 1
+//QUESTION 1
 int a = 10;
 int* p = &a;
 *p = 20;
@@ -8,25 +8,55 @@ What will be the output? -- 20 (p is pointing to a, modified by *p changing valu
 Will this run/compile? -- It will run/compile
 Is there a memory leak or dangling pointer? -- No there are none.(no new keyword)
 
-//Question 2
+//QUESTION 2
 int* p = nullptr;
 *p = 5;
 
-What will be the output? -- 5
+What will be the output? -- Undefined, likely to crash because nullptr does not have a valid address to point too.
+Even though *p = 5 is valid, because there is no pointer to an actuall address it will cause errors
+Will this run/compile? -- Yes it will run, but possibility for crashing.
+Is there a memory leak or dangling pointer? -- No
+
+//QUESTION 2.1
+int a = 5;
+int* p = &a;
+int b = *p;
+*p = 10;
+std::cout << a << " " << b;
+
+What will be the output? -- 10 5 (b is assigned before we change the value of *p)
 Will this run/compile? -- Yes
 Is there a memory leak or dangling pointer? -- No
 
-What will be the output? --
-Will this run/compile? --
-Is there a memory leak or dangling pointer? --
+//QUESTION 3
+int* p = new int(5);
+delete p;
+*p = 10;
 
-What will be the output? --
-Will this run/compile? --
-Is there a memory leak or dangling pointer? --
+What will be the output? -- Will have undefined outcome
+Will this run/compile? -- No because we delete p and then try and change it's value with *p, but
+the pointer is already deleted.
+Is there a memory leak or dangling pointer? -- Yes we free the allocated memory with the delete keyword,
+and then try and dereference the now deleted pointer.
 
-What will be the output? --
-Will this run/compile? --
-Is there a memory leak or dangling pointer? --
+//QUESTION 4
+int a = 10;
+float* p = (float*)&a;
+std::cout << *p;
+
+What will be the output? -- Undefined behavior
+Will this run/compile? -- Yes it will but it will have unknown effects. Casting pointers can lead to undefined behavior.
+Is there a memory leak or dangling pointer? -- No
+
+//QUESTION 5
+int a = 5;
+int* p = &a;
+p = nullptr;
+*p = 10;
+
+What will be the output? -- Undefinined behavior
+Will this run/compile? -- Run and Compile but will lead to undefined behavior.
+Is there a memory leak or dangling pointer? -- Dangling pointer (p no longer points to anything after nullptr.)
 
 What will be the output? --
 Will this run/compile? --
